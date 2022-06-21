@@ -1,0 +1,39 @@
+<main class="container">
+    <section class="container__section">
+        <h1 class="container__h1">textto 1</h1>
+        <h2 class="container__h2">AUTECO</h2>
+        <article class="container__article">
+            <p>60002390</p>
+            <p>2799000</p>
+        </article>
+        <article class="container__article__p">
+            <p>36 Cuotas</p>
+            <p>123456</p>
+        </article>
+        <article class="container__article__dues">
+            <div>
+                <p>24 cuotas</p>
+                <p>$161030</p>
+            </div>
+            <div>
+                <p>12 cuotas</p>
+                <p>$277317</p>
+            </div>
+        </article>
+        <article class="container__article__description">
+            <p>
+                EL TELEVISOR 4K UHD SUPERA LOS LÍMITES DEL FHD CON 4 VECES MÁS PIXELES PARA QUE TUS OJOS CAPTEN LAS IMÁGENES NÍTIDAS Y CLARAS QUE MERECES. AHORA PUEDES VER INCLUSO LOS DETALLES MÁS PEQUEÑOS EN CADA ESCENA. CON PURCOLOR LOS VIDEOS SE SIENTEN CASI COMO SI ESTUVIERAS ALLÍ.
+            </p>
+            <p>precio válida del 16 de Junio hasta el 31 de junio hasta agotar existencias</p>
+        </article>
+    </section>
+    <section class="section__input__ean">
+        <form [formGroup]="formProduct" (ngSubmit)="getProduct()">
+            <mat-label>EAN:</mat-label>
+            <mat-form-field class="example-form-field" appearance="fill">
+                <input matInput type="number" formControlName="product">
+            </mat-form-field>
+            <button mat-raised-button color="primary">Consultar producto</button>
+        </form>
+    </section>
+</main>

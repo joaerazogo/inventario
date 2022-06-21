@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    align-content: center;
+    padding: 40px;
+
+    & .container__article,
+    & .container__h2,
+    & .container__h1{
+        text-align: center;
+    }
+}
+
+.container__article__p{
+    margin-left: 5rem;
+}
+
+.container__article__dues {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    grid-gap: 16vw;
+}
+
+.container__article__description{
+    text-align: center;
+}
+
+.section__input__ean{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
